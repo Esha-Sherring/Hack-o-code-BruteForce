@@ -9,15 +9,28 @@ A mobile app to assist those struggling with addiction of any form . It seeks to
 6. Chat with peers
 7. Meditate 
 
-<h3 align="left">Contributors</h3>
+<h2 align="left">Contributors</h2>
 
- * Esha Sherring
+ **Esha Sherring** (https://www.github.com/Esha-Sherring)
  
- * Mahek Khowala
+ **Mahek Khowala** (https://www.github.com/mac2503)
 
 
+## Tech Stack
 
-<h3 align="left">Languages and Tools:</h3>
+**Front-end:** Flutter 
+
+**Server:** Node, Express
+
+**Database:** Mongo Atlas
+
 <p align="left"> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
 <h3 align="left">Screenshots</h3>
+<p float="left">
+<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S1.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S2.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<br>
+<br>
+<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S3.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S%23.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+</p>
+
