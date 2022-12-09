@@ -8,16 +8,15 @@ const User = require('../models/User');
 // @route     POST /api/v1/user/register
 // @access    Public
 exports.register = asyncHandler(async (req, res, next) => {
-  const { name, phone, rollno, email, password, hostel } = req.body;
+  const { name, phone, email, password, addiction } = req.body;
 
   // Create user
   const user = await User.create({
     name, 
     phone,
-    rollno,
     email,
     password,
-    hostel
+    addiction
   });
 
   sendTokenResponse(user, 200, res);
@@ -87,7 +86,7 @@ exports.updateDetails = asyncHandler (async (req, res, next) => {
 });
 
 // @desc      Update password
-// @route     GET /api/v1/user/update-password
+// @route     PUT /api/v1/user/update-password
 // @access    Private
 exports.updatePassword = asyncHandler (async (req, res, next) => {
   const user = await User.findById(req.user.id).select('+password');
@@ -174,6 +173,103 @@ exports.resetPassword = asyncHandler (async (req, res, next) => {
   await user.save();
 
   sendTokenResponse(user, 200, res);
+});
+
+// @desc      Get total points
+// @route     GET /api/v1/user/get-total-points
+// @access    Private
+exports.getTotalPoints = asyncHandler (async (req, res, next) => {
+  const user = await User.findById(req.user.id).select('+totalPoints');
+  var size = user.addiction.length
+  var now = new Date();
+  var Difference_In_Time = new Date(now).getTime() - user.createdAt.getTime();
+  var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  var updatedPoints = Difference_In_Days*(20*size);
+  var intTotalPoints = Math.floor( updatedPoints );
+  user.totalPoints = intTotalPoints;
+  await user.save();
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
+
+// @desc      Get total current savings
+// @route     GET /api/v1/user/get-total-current-savings
+// @access    Private
+exports.getTotalCurrentSavings = asyncHandler (async (req, res, next) => {
+  const user = await User.findById(req.user.id);
+
+  var now = new Date();
+  var Difference_In_Time = new Date(now).getTime() - user.createdAt.getTime();
+  var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+  var arr = user.addiction;
+  var size = arr.length;
+  var inc = 0;
+
+  for (var i = 0; i < size; i++) {
+    if (arr[i] == "caffeine") {
+      inc = inc+(Difference_In_Days*3);
+    }
+    if (arr[i] == "smoking") {
+      inc = inc+(Difference_In_Days*10);
+    }
+    if (arr[i] == "sugar") {
+      inc = inc+(Difference_In_Days*5);
+    }
+    if (arr[i] == "drugs") {
+      inc = inc+(Difference_In_Days*30);
+    }
+    if (arr[i] == "alcohol") {
+      inc = inc+(Difference_In_Days*60);
+    }
+  }
+
+  var tcs = Math.floor(inc);
+  user.totalCurrentSavings = tcs;
+  await user.save();
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
+
+// @desc      Get total expected savings
+// @route     GET /api/v1/user/get-total-expected-savings
+// @access    Private
+exports.getTotalExpectedSavings = asyncHandler (async (req, res, next) => {
+  const user = await User.findById(req.user.id);
+
+  var arr = user.addiction;
+  var size = arr.length;
+  var inc = 0;
+
+  for (var i = 0; i < size; i++) {
+    if (arr[i] == "caffeine") {
+      inc = inc+(user.longestStreak*3);
+    }
+    if (arr[i] == "smoking") {
+      inc = inc+(user.longestStreak*10);
+    }
+    if (arr[i] == "sugar") {
+      inc = inc+(user.longestStreak*5);
+    }
+    if (arr[i] == "drugs") {
+      inc = inc+(user.longestStreak*30);
+    }
+    if (arr[i] == "alcohol") {
+      inc = inc+(user.longestStreak*60);
+    }
+  }
+
+  var tes = Math.floor(inc);
+  user.totalExpectedSavings = tes;
+  await user.save();
+  res.status(200).json({
+    success: true,
+    data: user
+  });
 });
 
 // Get token from model, create cookie & send response

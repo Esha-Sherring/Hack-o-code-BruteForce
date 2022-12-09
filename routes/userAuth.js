@@ -6,7 +6,10 @@ const {
   forgotPassword, 
   resetPassword, 
   updateDetails,
-  updatePassword
+  updatePassword,
+  getTotalPoints,
+  getTotalCurrentSavings,
+  getTotalExpectedSavings
 } = require('../controllers/userAuth');
 const {
   addPost,
@@ -26,6 +29,10 @@ router.put('/update-details', protect, updateDetails);
 router.put('/update-password', protect, updatePassword);
 router.post('/forgot-password', forgotPassword);
 router.put('/reset-password/:resetToken', resetPassword);
+
+router.get('/get-total-points', protect, getTotalPoints);
+router.get('/get-total-current-savings', protect, getTotalCurrentSavings);
+router.get('/get-total-expected-savings', protect, getTotalExpectedSavings);
 
 router.post("/add-post", protect, addPost);
 router.get("/post/:id", protect, getPostById);
