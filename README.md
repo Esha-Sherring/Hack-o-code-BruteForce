@@ -34,6 +34,13 @@ A mobile app to assist those struggling with addiction of any form . It seeks to
 - Run the dev script in the terminal: `npm run dev`
   - Server starts running at http://localhost:5000
   - Server automatically restarts when any of the files are changed
+  
+## 3. Input/Output
+
+![](images/e-tiet_use_case_diagram.png)
+
+## 4. Live Link
+Link: [https://documenter.getpostman.com/view/11541273/2s8YzXuzUp](https://documenter.getpostman.com/view/11541273/2s8YzXuzUp)
 
 ## 5. Screenshot of the Interface
 
