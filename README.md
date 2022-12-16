@@ -36,8 +36,7 @@ A mobile app to assist those struggling with addiction of any form . It seeks to
   - Server automatically restarts when any of the files are changed
   
 ## 3. Input/Output
-
-![](images/e-tiet_use_case_diagram.png)
+<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/CurebitIO.PNG" width="400" height="270" />
 
 ## 4. Live Link
 Link: [https://documenter.getpostman.com/view/11541273/2s8YzXuzUp](https://documenter.getpostman.com/view/11541273/2s8YzXuzUp)
