@@ -35,6 +35,8 @@ A mobile app to assist those struggling with addiction of any form . It seeks to
   - Server starts running at http://localhost:5000
   - Server automatically restarts when any of the files are changed
   
+### API Documentation : https://documenter.getpostman.com/view/11541273/2s8YzXuzUp
+  
 ## 3. Input/Output
 <img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/CurebitIO.PNG" width="400" height="270" />
 
