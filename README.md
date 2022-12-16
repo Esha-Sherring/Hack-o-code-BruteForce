@@ -1,5 +1,9 @@
-# CureBit
+# Title: e-TIET
 
+## 1. Methodology
+![](methodology.jpeg)
+
+## 2. Description
 A mobile app to assist those struggling with addiction of any form . It seeks to offer incentives through partnerships with outside parties to encourage users to maintain a streak of sobriety.A user can 
 1. Sign Up and login
 2. Create Posts about his experiences
@@ -9,24 +13,30 @@ A mobile app to assist those struggling with addiction of any form . It seeks to
 6. Chat with peers
 7. Meditate 
 
-<h2 align="left">Contributors</h2>
+### Tech Stack Used
 
- **Esha Sherring** (https://www.github.com/Esha-Sherring)
- 
- **Mahek Khowala** (https://www.github.com/mac2503)
+- MongoDB - Database used
+- Express - Server/routing API for web app
+- Node - Backend JS runtime
+- Stripe - Payment API
 
+### How to build and run this project
 
-## Tech Stack
+### Setting up the project
 
-**Front-end:** Flutter 
+- Clone this repository: `https://github.com/Esha-Sherring/Hack-o-code-BruteForce`
+- Create .env file in the root directory of the project
+- Install node.js and npm on your local machine
+- Install the dependencies: `npm install`
 
-**Server:** Node, Express
+### Running the project
 
-**Database:** Mongo Atlas
+- Run the dev script in the terminal: `npm run dev`
+  - Server starts running at http://localhost:5000
+  - Server automatically restarts when any of the files are changed
 
-<p align="left"> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+## 5. Screenshot of the Interface
 
-<h3 align="left">Screenshots</h3>
 <p float="left">
 <img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S1.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/Esha-Sherring/Hack-o-code-BruteForce/blob/master/S2.PNG" width="450" height="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <br>
