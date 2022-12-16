@@ -1,4 +1,4 @@
-# Title: e-TIET
+# Title: Curebit
 
 ## 1. Methodology
 ![](methodology.jpeg)
